@@ -1,6 +1,8 @@
 body {
     background-color: black;
     color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
 }
 
 #heading {
@@ -10,6 +12,7 @@ body {
     padding: 10px;
     animation: blinkGlow 2s infinite ease-in-out;
     font-size: 60px;
+    background-color: black;
 }
 @keyframes blinkGlow {
   0%, 100% {
@@ -102,27 +105,23 @@ body {
 .radio-group {
     margin: 20px 0;
     text-align: left;
-    display: inline-block;
 }
 
 .radio-group label {
     display: block;
     margin: 10px 0;
-    font-size: 18px;
     cursor: pointer;
 }
 
-.radio-group input[type="radio"] {
-    margin-right: 10px;
-}
- .question {
+.question {
       display: none;
     }
 .question.active {
       display: block;
     }
+
 .next_button{
-     background-color: aquamarine;
+    background-color: aquamarine;
     border: 4px ridge rgb(73, 191, 117);
     font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
@@ -131,6 +130,58 @@ body {
     padding: 12px 24px;
     border-radius: 8px;
     color: black;
-    display: block;
     cursor: pointer;
+    display: block;
+    margin:20px auto;
+}
+
+#anime{
+    background-image: url(anime.jpg);
+    background-size:cover;
+}
+.result{
+    background-color: black;
+    border: 4px ridge aquamarine;
+    border-radius: 20px;
+    width: 400px;
+    height: 200px;
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+    padding-top: 40px;
+} 
+#choose{
+    color: aquamarine;
+    text-decoration: none;
+
+}
+#choose:hover{
+    color: rgba(19, 189, 113, 0.838);
+    text-decoration: underline;
+
+}
+#play_again{
+    margin: 5px auto;
+}
+#submitquiz{
+    margin: 20px auto;
+}
+.radio-group p {
+  margin-bottom: 20px;
+}
+#gk{
+    background-image: url(gk.avif);
+    background-size:cover;
+}
+#science{
+    background-image: url(science.webp);
+    background-size: contain;
+}
+#social{
+    background-image: url(pxfuel.jpg);
+    background-size: cover;
 }

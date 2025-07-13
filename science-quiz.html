@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -5,102 +6,134 @@
   <title>Science & Technology Quiz - Quizzo</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body id="science">
   <header id="top">
-    <h1 id="heading">QUIZZO</h1>
+    <h1 id="heading"><i>QUIZZO</i></h1>
   </header>
   <main>
     <section class="boxes" id="topic_section">
       <h2 class="box_heads">Science & Technology</h2>
-      <p>Challenge yourself with questions from the worlds of physics, chemistry, and tech!</p>
-      <div id="quiz-area">
-        <form id="science-quiz-form" class="quizz">
-          <ol>
-            <li>
-              What is the chemical symbol for gold?
-              <br>
-              <label><input type="radio" name="q1" value="a"> Go</label><br>
-              <label><input type="radio" name="q1" value="b"> Gd</label><br>
-              <label><input type="radio" name="q1" value="c"> Au</label><br>
-              <label><input type="radio" name="q1" value="d"> Ag</label>
-            </li><br>
-            <li>
-              What gas do plants absorb during photosynthesis?
-              <br>
-              <label><input type="radio" name="q2" value="a"> Oxygen</label><br>
-              <label><input type="radio" name="q2" value="b"> Hydrogen</label><br>
-              <label><input type="radio" name="q2" value="c"> Carbon Dioxide</label><br>
-              <label><input type="radio" name="q2" value="d"> Nitrogen</label>
-            </li><br>
-            <li>
-              What part of the cell contains DNA?
-              <br>
-              <label><input type="radio" name="q3" value="a"> Mitochondria</label><br>
-              <label><input type="radio" name="q3" value="b"> Cytoplasm</label><br>
-              <label><input type="radio" name="q3" value="c"> Nucleus</label><br>
-              <label><input type="radio" name="q3" value="d"> Ribosome</label>
-            </li><br>
-            <li>
-              Who invented the telephone?
-              <br>
-              <label><input type="radio" name="q4" value="a"> Alexander Graham Bell</label><br>
-              <label><input type="radio" name="q4" value="b"> Thomas Edison</label><br>
-              <label><input type="radio" name="q4" value="c"> Nikola Tesla</label><br>
-              <label><input type="radio" name="q4" value="d"> Albert Einstein</label>
-            </li><br>
-            <li>
-              What is the speed of light?
-              <br>
-              <label><input type="radio" name="q5" value="a"> 3 x 10^6 m/s</label><br>
-              <label><input type="radio" name="q5" value="b"> 3 x 10^8 m/s</label><br>
-              <label><input type="radio" name="q5" value="c"> 3 x 10^5 m/s</label><br>
-              <label><input type="radio" name="q5" value="d"> 3 x 10^7 m/s</label>
-            </li><br>
-            <li>
-              HTML is used to build:
-              <br>
-              <label><input type="radio" name="q6" value="a"> Apps</label><br>
-              <label><input type="radio" name="q6" value="b"> Games</label><br>
-              <label><input type="radio" name="q6" value="c"> Websites</label><br>
-              <label><input type="radio" name="q6" value="d"> Robots</label>
-            </li><br>
-            <li>
-              Which of the following is a programming language?
-              <br>
-              <label><input type="radio" name="q7" value="a"> Python</label><br>
-              <label><input type="radio" name="q7" value="b"> Panda</label><br>
-              <label><input type="radio" name="q7" value="c"> Cobra</label><br>
-              <label><input type="radio" name="q7" value="d"> Viper</label>
-            </li><br>
-            <li>
-              What planet is known as the Red Planet?
-              <br>
-              <label><input type="radio" name="q8" value="a"> Venus</label><br>
-              <label><input type="radio" name="q8" value="b"> Mars</label><br>
-              <label><input type="radio" name="q8" value="c"> Mercury</label><br>
-              <label><input type="radio" name="q8" value="d"> Jupiter</label>
-            </li><br>
-            <li>
-              Who developed the theory of relativity?
-              <br>
-              <label><input type="radio" name="q9" value="a"> Newton</label><br>
-              <label><input type="radio" name="q9" value="b"> Einstein</label><br>
-              <label><input type="radio" name="q9" value="c"> Galileo</label><br>
-              <label><input type="radio" name="q9" value="d"> Bohr</label>
-            </li><br>
-            <li>
-              Which device is used to measure temperature?
-              <br>
-              <label><input type="radio" name="q10" value="a"> Barometer</label><br>
-              <label><input type="radio" name="q10" value="b"> Thermometer</label><br>
-              <label><input type="radio" name="q10" value="c"> Speedometer</label><br>
-              <label><input type="radio" name="q10" value="d"> Altimeter</label>
-            </li>
-          </ol>
-          <button type="submit" class="start_button">Submit Quiz</button>
-        </form>
-      </div>
+      <p><b>Challenge yourself with questions from the worlds of physics, chemistry, and tech!</b></p>
+      <form id="science-quiz-form" class="quiz">
+
+        <div class="question active" data-answer="c">
+          <div class="radio-group">
+            <p>1. What is the chemical symbol for gold?</p>
+            <label><input type="radio" name="q1" value="a"> Go</label>
+            <label><input type="radio" name="q1" value="b"> Gd</label>
+            <label><input type="radio" name="q1" value="c"> Au</label>
+            <label><input type="radio" name="q1" value="d"> Ag</label>
+          </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
+
+        <div class="question" data-answer="c">
+          <div class="radio-group">
+            <p>2. What gas do plants absorb during photosynthesis?</p>
+            <label><input type="radio" name="q2" value="a"> Oxygen</label>
+            <label><input type="radio" name="q2" value="b"> Hydrogen</label>
+            <label><input type="radio" name="q2" value="c"> Carbon Dioxide</label>
+            <label><input type="radio" name="q2" value="d"> Nitrogen</label>
+          </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
+
+        <div class="question" data-answer="c">
+          <div class="radio-group">
+            <p>3. What part of the cell contains DNA?</p>
+            <label><input type="radio" name="q3" value="a"> Mitochondria</label>
+            <label><input type="radio" name="q3" value="b"> Cytoplasm</label>
+            <label><input type="radio" name="q3" value="c"> Nucleus</label>
+            <label><input type="radio" name="q3" value="d"> Ribosome</label>
+          </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
+
+        <div class="question" data-answer="a">
+          <div class="radio-group">
+            <p>4. Who invented the telephone?</p>
+            <label><input type="radio" name="q4" value="a"> Alexander Graham Bell</label>
+            <label><input type="radio" name="q4" value="b"> Thomas Edison</label>
+            <label><input type="radio" name="q4" value="c"> Nikola Tesla</label>
+            <label><input type="radio" name="q4" value="d"> Albert Einstein</label>
+          </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
+
+        <div class="question" data-answer="b">
+          <div class="radio-group">
+            <p>5. What is the speed of light?</p>
+            <label><input type="radio" name="q5" value="a"> 3 x 10^6 m/s</label>
+            <label><input type="radio" name="q5" value="b"> 3 x 10^8 m/s</label>
+            <label><input type="radio" name="q5" value="c"> 3 x 10^5 m/s</label>
+            <label><input type="radio" name="q5" value="d"> 3 x 10^7 m/s</label>
+          </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
+
+        <div class="question" data-answer="c">
+          <div class="radio-group">
+            <p>6. HTML is used to build:</p>
+            <label><input type="radio" name="q6" value="a"> Apps</label>
+            <label><input type="radio" name="q6" value="b"> Games</label>
+            <label><input type="radio" name="q6" value="c"> Websites</label>
+            <label><input type="radio" name="q6" value="d"> Robots</label>
+          </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
+
+        <div class="question" data-answer="a">
+          <div class="radio-group">
+            <p>7. Which of the following is a programming language?</p>
+            <label><input type="radio" name="q7" value="a"> Python</label>
+            <label><input type="radio" name="q7" value="b"> Panda</label>
+            <label><input type="radio" name="q7" value="c"> Cobra</label>
+            <label><input type="radio" name="q7" value="d"> Viper</label>
+          </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
+
+        <div class="question" data-answer="b">
+          <div class="radio-group">
+            <p>8. What planet is known as the Red Planet?</p>
+            <label><input type="radio" name="q8" value="a"> Venus</label>
+            <label><input type="radio" name="q8" value="b"> Mars</label>
+            <label><input type="radio" name="q8" value="c"> Mercury</label>
+            <label><input type="radio" name="q8" value="d"> Jupiter</label>
+          </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
+
+        <div class="question" data-answer="b">
+          <div class="radio-group">
+            <p>9. Who developed the theory of relativity?</p>
+            <label><input type="radio" name="q9" value="a"> Newton</label>
+            <label><input type="radio" name="q9" value="b"> Einstein</label>
+            <label><input type="radio" name="q9" value="c"> Galileo</label>
+            <label><input type="radio" name="q9" value="d"> Bohr</label>
+          </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
+
+        <div class="question" data-answer="b">
+          <div class="radio-group">
+            <p>10. Which device is used to measure temperature?</p>
+            <label><input type="radio" name="q10" value="a"> Barometer</label>
+            <label><input type="radio" name="q10" value="b"> Thermometer</label>
+            <label><input type="radio" name="q10" value="c"> Speedometer</label>
+            <label><input type="radio" name="q10" value="d"> Altimeter</label>
+          </div>
+          <button class="start_button" id="submitquiz">Submit Quiz</button>
+        </div>
+
+      </form>
     </section>
+
+    <div class="result">
+      <div id="score">Your Score:</div>
+      <button class="start_button" id="play_again">Play Again</button>
+      <a href="theme.html" id="choose">Click here to choose different topic</a>
+    </div>
   </main>
   <script src="script.js"></script>
 </body>

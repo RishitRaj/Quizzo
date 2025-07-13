@@ -2,112 +2,138 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anime Quiz - Quizzo</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="anime">
   <header id="top">
     <h1 id="heading"><i>QUIZZO</i></h1>
   </header>
   <main>
     <section class="boxes" id="topic_section">
       <h2 class="box_heads">Anime Quiz</h2>
-      <p>Test your knowledge of popular anime titles from your watchlist!</p>
-      <div id="quiz-area">
-        <form id="anime-quiz-form" class="quiz">
-          <div class="question active">
+      <p><b>Test your knowledge of popular anime titles in the anime world</b></p>
+      <form id="anime-quiz-form" class="quiz">
+
+        <div class="question active" data-answer="b">
+          <div class="radio-group">
             <p>1. In <i>Spy x Family</i>, what is the name of the telepathic girl adopted by Loid Forger?</p>
-            <label><input type="radio" name="q1" value="a"> Yor</label><br>
-            <label><input type="radio" name="q1" value="b"> Anya</label><br>
-            <label><input type="radio" name="q1" value="c"> Fiona</label><br>
-            <label><input type="radio" name="q1" value="d"> Millie</label><br>
-            <button type="button" class="next_button">Next</button>
+            <label><input type="radio" name="q1" value="a"> Yor</label>
+            <label><input type="radio" name="q1" value="b"> Anya</label>
+            <label><input type="radio" name="q1" value="c"> Fiona</label>
+            <label><input type="radio" name="q1" value="d"> Millie</label>
           </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
 
-          <div class="question">
+        <div class="question" data-answer="b">
+          <div class="radio-group">
             <p>2. In <i>Dr. Stone</i>, what is Senku’s main goal after humanity is petrified?</p>
-            <label><input type="radio" name="q2" value="a"> Become king of the world</label><br>
-            <label><input type="radio" name="q2" value="b"> Rebuild civilization through science</label><br>
-            <label><input type="radio" name="q2" value="c"> Rule using stone power</label><br>
-            <label><input type="radio" name="q2" value="d"> Defeat the Empire of Might</label><br>
-            <button type="button" class="next_button">Next</button>
+            <label><input type="radio" name="q2" value="a"> Become king of the world</label>
+            <label><input type="radio" name="q2" value="b"> Rebuild civilization through science</label>
+            <label><input type="radio" name="q2" value="c"> Rule using stone power</label>
+            <label><input type="radio" name="q2" value="d"> Defeat the Empire of Might</label>
           </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
 
-          <div class="question">
+        <div class="question" data-answer="c">
+          <div class="radio-group">
             <p>3. In <i>Demon Slayer</i>, what is Nezuko’s special trait that sets her apart from other demons?</p>
-            <label><input type="radio" name="q3" value="a"> She eats humans selectively</label><br>
-            <label><input type="radio" name="q3" value="b"> She can control other demons</label><br>
-            <label><input type="radio" name="q3" value="c"> She retains her human emotions</label><br>
-            <label><input type="radio" name="q3" value="d"> She becomes invisible</label><br>
-            <button type="button" class="next_button">Next</button>
+            <label><input type="radio" name="q3" value="a"> She eats humans selectively</label>
+            <label><input type="radio" name="q3" value="b"> She can control other demons</label>
+            <label><input type="radio" name="q3" value="c"> She retains her human emotions</label>
+            <label><input type="radio" name="q3" value="d"> She becomes invisible</label>
           </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
 
-          <div class="question">
+        <div class="question" data-answer="d">
+          <div class="radio-group">
             <p>4. In <i>Chainsaw Man</i>, what devil does Denji initially merge with?</p>
-            <label><input type="radio" name="q4" value="a"> Katana Devil</label><br>
-            <label><input type="radio" name="q4" value="b"> Ghost Devil</label><br>
-            <label><input type="radio" name="q4" value="c"> Blood Devil</label><br>
-            <label><input type="radio" name="q4" value="d"> Chainsaw Devil (Pochita)</label><br>
-            <button type="button" class="next_button">Next</button>
+            <label><input type="radio" name="q4" value="a"> Katana Devil</label>
+            <label><input type="radio" name="q4" value="b"> Ghost Devil</label>
+            <label><input type="radio" name="q4" value="c"> Blood Devil</label>
+            <label><input type="radio" name="q4" value="d"> Chainsaw Devil</label>
           </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
 
-          <div class="question">
+        <div class="question" data-answer="a">
+          <div class="radio-group">
             <p>5. In <i>Assassination Classroom</i>, what is the name of the alien-like teacher?</p>
-            <label><input type="radio" name="q5" value="a"> Korosensei</label><br>
-            <label><input type="radio" name="q5" value="b"> Karman</label><br>
-            <label><input type="radio" name="q5" value="c"> Kaede</label><br>
-            <label><input type="radio" name="q5" value="d"> Sensei X</label><br>
-            <button type="button" class="next_button">Next</button>
+            <label><input type="radio" name="q5" value="a"> Korosensei</label>
+            <label><input type="radio" name="q5" value="b"> Karman</label>
+            <label><input type="radio" name="q5" value="c"> Kaede</label>
+            <label><input type="radio" name="q5" value="d"> Sensei X</label>
           </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
 
-          <div class="question">
-            <p>6. In <i>Mob Psycho 100</i>, what is Mob’s real name?</p>
-            <label><input type="radio" name="q6" value="a"> Shigeo Kageyama</label><br>
-            <label><input type="radio" name="q6" value="b"> Reigen Arataka</label><br>
-            <label><input type="radio" name="q6" value="c"> Teruki Hanazawa</label><br>
-            <label><input type="radio" name="q6" value="d"> Sho Suzuki</label><br>
-            <button type="button" class="next_button">Next</button>
+        <div class="question" data-answer="a">
+          <div class="radio-group">
+            <p>6. In <i>Mob Psycho 100</i>, what is the protagonist Mob’s real name?</p>
+            <label><input type="radio" name="q6" value="a"> Shigeo Kageyama</label>
+            <label><input type="radio" name="q6" value="b"> Reigen Arataka</label>
+            <label><input type="radio" name="q6" value="c"> Teruki Hanazawa</label>
+            <label><input type="radio" name="q6" value="d"> Sho Suzuki</label>
           </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
 
-          <div class="question">
+        <div class="question" data-answer="c">
+          <div class="radio-group">
             <p>7. In <i>One Punch Man</i>, who is the cyborg that becomes Saitama’s disciple?</p>
-            <label><input type="radio" name="q7" value="a"> Bang</label><br>
-            <label><input type="radio" name="q7" value="b"> Garou</label><br>
-            <label><input type="radio" name="q7" value="c"> Genos</label><br>
-            <label><input type="radio" name="q7" value="d"> Sonic</label><br>
-            <button type="button" class="next_button">Next</button>
+            <label><input type="radio" name="q7" value="a"> Bang</label>
+            <label><input type="radio" name="q7" value="b"> Garou</label>
+            <label><input type="radio" name="q7" value="c"> Genos</label>
+            <label><input type="radio" name="q7" value="d"> Sonic</label>
           </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
 
-          <div class="question">
+        <div class="question" data-answer="c">
+          <div class="radio-group">
             <p>8. In <i>Attack on Titan</i>, who is the holder of the Attack Titan at the start of the series?</p>
-            <label><input type="radio" name="q8" value="a"> Zeke Yeager</label><br>
-            <label><input type="radio" name="q8" value="b"> Reiner Braun</label><br>
-            <label><input type="radio" name="q8" value="c"> Grisha Yeager</label><br>
-            <label><input type="radio" name="q8" value="d"> Eren Kruger</label><br>
-            <button type="button" class="next_button">Next</button>
+            <label><input type="radio" name="q8" value="a"> Zeke Yeager</label>
+            <label><input type="radio" name="q8" value="b"> Reiner Braun</label>
+            <label><input type="radio" name="q8" value="c"> Grisha Yeager</label>
+            <label><input type="radio" name="q8" value="d"> Eren Kruger</label>
           </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
 
-          <div class="question">
+        <div class="question" data-answer="c">
+          <div class="radio-group">
             <p>9. In <i>Erased</i>, what is the main ability of Satoru Fujinuma?</p>
-            <label><input type="radio" name="q9" value="a"> Reading minds</label><br>
-            <label><input type="radio" name="q9" value="b"> Teleportation</label><br>
-            <label><input type="radio" name="q9" value="c"> Revival — time reversal</label><br>
-            <label><input type="radio" name="q9" value="d"> Invisibility</label><br>
-            <button type="button" class="next_button">Next</button>
+            <label><input type="radio" name="q9" value="a"> Reading minds</label>
+            <label><input type="radio" name="q9" value="b"> Teleportation</label>
+            <label><input type="radio" name="q9" value="c"> Revival — time reversal</label>
+            <label><input type="radio" name="q9" value="d"> Invisibility</label>
           </div>
+          <button type="button" class="next_button">Next</button>
+        </div>
 
-          <div class="question">
+        <div class="question" data-answer="b">
+          <div class="radio-group">
             <p>10. In <i>Your Name</i>, what phenomenon connects Taki and Mitsuha?</p>
-            <label><input type="radio" name="q10" value="a"> A shared dream</label><br>
-            <label><input type="radio" name="q10" value="b"> Body-swapping across time</label><br>
-            <label><input type="radio" name="q10" value="c"> Comet wishing</label><br>
-            <label><input type="radio" name="q10" value="d"> Soul resonance</label><br>
-            <button type="submit" class="start_button">Submit Quiz</button>
+            <label><input type="radio" name="q10" value="a"> A shared dream</label>
+            <label><input type="radio" name="q10" value="b"> Body-swapping across time</label>
+            <label><input type="radio" name="q10" value="c"> Comet wishing</label>
+            <label><input type="radio" name="q10" value="d"> Soul resonance</label>
           </div>
-        </form>
-      </div>
+          <button class="start_button" id="submitquiz">Submit Quiz</button>
+        </div>
+
+      </form>
     </section>
+
+    <div class="result">
+      <div id="score">Your Score:</div>
+      <button class="start_button" id="play_again">Play Again</button>
+      <a href="theme.html" id="choose">Click here to choose different topic</a>
+    </div>
   </main>
   <script src="script.js"></script>
 </body>
